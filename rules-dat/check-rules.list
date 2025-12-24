@@ -1,15 +1,4 @@
 # ============================================
-# 连通性检查 (Connectivity Check)
-# 通常用于判断网络是否断开或检测Google连通性
-# ============================================
-# Google 连接性检查 (Generate 204)
-DOMAIN-SUFFIX,l.google.com,no-resolve
-# Google IP段 (通常用于连通性探测)
-IP-CIDR,142.251.215.0/24,no-resolve
-# Google IP段 (通常用于连通性探测)
-IP-CIDR,74.125.250.129/24,no-resolve
-
-# ============================================
 # 网络速度测试 (Speed Test)
 # 用于测试带宽速度
 # ============================================
@@ -110,6 +99,8 @@ DOMAIN-SUFFIX,addr.tools
 # 服务商与工具 (Providers & Tools)
 # VPS、VPN 官网及其他相关工具
 # ============================================
+# Cloudflare 验证/盾
+DOMAIN-SUFFIX,challenges.cloudflare.com
 # Vultr VPS 官网 (常用于测试机房连通性)
 DOMAIN-SUFFIX,vultr.com
 # Surfshark VPN 官网
@@ -126,5 +117,3 @@ DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,test-ipv6.com
 # 雅啦啦 (技术资源/博客站)
 DOMAIN-SUFFIX,yalala.com
-# 个人或小众工具站
-DOMAIN-SUFFIX,888005.xyz
