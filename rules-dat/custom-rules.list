@@ -1,6 +1,1 @@
-- DOMAIN-SUFFIX,fast.com              # Netflix 提供的测速服务
-- DOMAIN,speed.cloudflare.com         # Cloudflare 提供的测速服务
-- DOMAIN-SUFFIX,speedtest.net         # Ookla Speedtest 全球最大的测速平台
-- DOMAIN-SUFFIX,speedtest.cn          # 测速网 (中国国内常用)
-- DOMAIN-SUFFIX,speedcheck.org        # 第三方网速测试网站
-- DOMAIN-SUFFIX,ustc.edu.cn           # 中国科学技术大学 (常用于镜像站测速)
+DOMAIN-SUFFIX,ustc.edu.cn
