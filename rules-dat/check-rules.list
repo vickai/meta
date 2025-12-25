@@ -29,10 +29,10 @@ DOMAIN-SUFFIX,ifconfig.me
 DOMAIN-SUFFIX,ip125.com
 # 简单的IP查询站
 DOMAIN-SUFFIX,ip111.cn
-# 知名简洁的IP查询站
-DOMAIN-SUFFIX,ip.sb
-# IP查询 API
-DOMAIN-SUFFIX,ipify.org
+# 知名简洁的IP查询站  (OpenClash 自带检测）
+#DOMAIN-SUFFIX,ip.sb
+# IP查询 API (OpenClash 自带检测）
+#DOMAIN-SUFFIX,ipify.org
 # IP查询 (台湾)
 DOMAIN-SUFFIX,whatismyip.com.tw
 # 老牌IP查询网站
