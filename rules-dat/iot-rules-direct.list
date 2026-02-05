@@ -1,0 +1,40 @@
+payload:
+  # NTP服务
+  - DST-PORT,123
+
+  # IoT / 局域网广播 / 组播 / 链路本地直连（极致兼容）
+  - IP-CIDR,224.0.0.0/4
+  - IP-CIDR,239.0.0.0/8
+  - IP-CIDR,255.255.255.255/32
+  - IP-CIDR,169.254.0.0/16
+  - IP-CIDR,127.0.0.0/8
+
+  # IoT 常用端口直连
+  # SSDP / UPnP
+  - DST-PORT,1900
+  # mDNS
+  - DST-PORT,5353
+  # ONVIF
+  - DST-PORT,3702
+  # 海康威视
+  - DST-PORT,8000
+  # RTSP
+  - DST-PORT,554
+  # 小米 IoT
+  - DST-PORT,7681
+  # CoAP
+  - DST-PORT,5683
+
+  # IoT / 智能家居常见域名直连
+  - DOMAIN-SUFFIX,miwifi.com
+  - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,xiaomi.com
+  - DOMAIN-SUFFIX,aqara.com
+  - DOMAIN-SUFFIX,tuya.com
+  - DOMAIN-SUFFIX,haier.com
+  - DOMAIN-SUFFIX,huawei.com
+  - DOMAIN-SUFFIX,hisilicon.com
+  - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,qnap.com
+  - DOMAIN-SUFFIX,local
+  - DOMAIN-SUFFIX,home.arpa
