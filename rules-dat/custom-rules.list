@@ -1,69 +1,80 @@
-# 内容：Bilibili 哔哩哔哩
-# 数量：23条
-DOMAIN,apiintl.biliapi.net
-DOMAIN,upos-hz-mirrorakam.akamaized.net
-DOMAIN-SUFFIX,acg.tv
-DOMAIN-SUFFIX,acgvideo.com
-DOMAIN-SUFFIX,b23.tv
-DOMAIN-SUFFIX,bigfun.cn
-DOMAIN-SUFFIX,bigfunapp.cn
-DOMAIN-SUFFIX,biliapi.com
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,bilibili.co
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,bilibili.tv
-DOMAIN-SUFFIX,biligame.com
-DOMAIN-SUFFIX,biligame.net
-DOMAIN-SUFFIX,biliintl.co
-DOMAIN-SUFFIX,bilivideo.cn
-DOMAIN-SUFFIX,bilivideo.com
-DOMAIN-SUFFIX,hdslb.com
-DOMAIN-SUFFIX,im9.com
-DOMAIN-SUFFIX,smtcdns.net
+payload:
+# ============================================
+# Bilibili 规则集
+# 包含主站、漫画、游戏、CDN 及海外版
+# ============================================
+# 特定域名匹配
+  - DOMAIN,manga.bilibili.com
+  - DOMAIN,upos-hz-mirrorakam.akamaized.net
+# 域名后缀匹配
+  - DOMAIN-SUFFIX,bilicomic.com
+  - DOMAIN-SUFFIX,bilicomics.com
+  - DOMAIN-SUFFIX,acg.tv
+  - DOMAIN-SUFFIX,acgvideo.com
+  - DOMAIN-SUFFIX,animetamashi.cn
+  - DOMAIN-SUFFIX,animetamashi.com
+  - DOMAIN-SUFFIX,anitama.cn
+  - DOMAIN-SUFFIX,anitama.net
+  - DOMAIN-SUFFIX,b23.tv
+  - DOMAIN-SUFFIX,bigfun.cn
+  - DOMAIN-SUFFIX,bigfunapp.cn
+  - DOMAIN-SUFFIX,bili22.cn
+  - DOMAIN-SUFFIX,bili2233.cn
+  - DOMAIN-SUFFIX,bili23.cn
+  - DOMAIN-SUFFIX,bili33.cn
+  - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN-SUFFIX,biliapi.net
+  - DOMAIN-SUFFIX,bilibili.cc
+  - DOMAIN-SUFFIX,bilibili.cn
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,bilibili.net
+  - DOMAIN-SUFFIX,bilibilipay.cn
+  - DOMAIN-SUFFIX,bilibilipay.com
+  - DOMAIN-SUFFIX,biligo.com
+  - DOMAIN-SUFFIX,im9.com
+  - DOMAIN-SUFFIX,yo9.com
+  - DOMAIN-SUFFIX,bilicdn1.com
+  - DOMAIN-SUFFIX,bilicdn2.com
+  - DOMAIN-SUFFIX,bilicdn3.com
+  - DOMAIN-SUFFIX,bilicdn4.com
+  - DOMAIN-SUFFIX,bilicdn5.com
+  - DOMAIN-SUFFIX,biliimg.com
+  - DOMAIN-SUFFIX,bilivideo.cn
+  - DOMAIN-SUFFIX,bilivideo.com
+  - DOMAIN-SUFFIX,bilivideo.net
+  - DOMAIN-SUFFIX,hdslb.com
+  - DOMAIN-SUFFIX,hdslb.org
+  - DOMAIN-SUFFIX,maoercdn.com
+  - DOMAIN-SUFFIX,mincdn.com
+  - DOMAIN-SUFFIX,bilibiligame.cn
+  - DOMAIN-SUFFIX,bilibiligame.co
+  - DOMAIN-SUFFIX,bilibiligame.net
+  - DOMAIN-SUFFIX,biligame.co
+  - DOMAIN-SUFFIX,biligame.com
+  - DOMAIN-SUFFIX,biligame.net
+  - DOMAIN-SUFFIX,bilibili.tv
+  - DOMAIN-SUFFIX,biliintl.com
+  - DOMAIN-SUFFIX,dreamcast.hk
 
-# 内容：ByteDance
-# 数量：44条
-DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,bdxiguaimg.com
-DOMAIN-SUFFIX,bdxiguastatic.com
-DOMAIN-SUFFIX,byted-static.com
-DOMAIN-SUFFIX,bytedance.com
-DOMAIN-SUFFIX,bytedance.net
-DOMAIN-SUFFIX,bytedns.net
-DOMAIN-SUFFIX,bytednsdoc.com
-DOMAIN-SUFFIX,bytegoofy.com
-DOMAIN-SUFFIX,byteimg.com
-DOMAIN-SUFFIX,bytescm.com
-DOMAIN-SUFFIX,bytetos.com
-DOMAIN-SUFFIX,bytexservice.com
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,douyincdn.com
-DOMAIN-SUFFIX,douyinpic.com
-DOMAIN-SUFFIX,douyinstatic.com
-DOMAIN-SUFFIX,douyinvod.com
-DOMAIN-SUFFIX,feelgood.cn
-DOMAIN-SUFFIX,feiliao.com
-DOMAIN-SUFFIX,gifshow.com
-DOMAIN-SUFFIX,huoshan.com
-DOMAIN-SUFFIX,huoshanzhibo.com
-DOMAIN-SUFFIX,ibytedapm.com
-DOMAIN-SUFFIX,iesdouyin.com
-DOMAIN-SUFFIX,ixigua.com
-DOMAIN-SUFFIX,kspkg.com
-DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,toutiao.com
-DOMAIN-SUFFIX,toutiao13.com
-DOMAIN-SUFFIX,toutiaoapi.com
-DOMAIN-SUFFIX,toutiaocdn.com
-DOMAIN-SUFFIX,toutiaocdn.net
-DOMAIN-SUFFIX,toutiaocloud.com
-DOMAIN-SUFFIX,toutiaohao.com
-DOMAIN-SUFFIX,toutiaohao.net
-DOMAIN-SUFFIX,toutiaoimg.com
-DOMAIN-SUFFIX,toutiaopage.com
-DOMAIN-SUFFIX,wukong.com
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,zijieimg.com
-DOMAIN-SUFFIX,zjbyte.com
-DOMAIN-SUFFIX,zjcdn.com
+# ============================================
+# 微信视频号相关规则 (VideoHao)
+# ============================================
+# 视频号内容
+  - DOMAIN-SUFFIX,channels.weixin.qq.com
+# 视频号直播
+  - DOMAIN-SUFFIX,live.weixin.qq.com
+# 视频号视频流（腾讯 CDN）
+  - DOMAIN-SUFFIX,vweixinf.tc.qq.com
+  - DOMAIN-SUFFIX,vweixinf.video.qq.com
+
+# ============================================
+# 蛋仔派对 (Egg Party) 相关规则
+# ============================================
+# 蛋仔派对主服务
+  - DOMAIN-SUFFIX,party.163.com
+# 游戏 API
+  - DOMAIN-SUFFIX,party-api.163.com
+# 游戏 CDN
+  - DOMAIN-SUFFIX,party-cdn.163.com
+# 游戏资源
+  - DOMAIN-SUFFIX,party-material.163.com
