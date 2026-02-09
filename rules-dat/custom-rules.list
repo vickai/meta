@@ -1,11 +1,5 @@
-# ============================================
-# Bilibili 规则集
-# ============================================
-# 特定域名匹配 (原 DOMAIN)
 manga.bilibili.com
 upos-hz-mirrorakam.akamaized.net
-
-# 域名后缀匹配 (原 DOMAIN-SUFFIX)
 +.bilicomic.com
 +.bilicomics.com
 +.acg.tv
@@ -55,17 +49,12 @@ upos-hz-mirrorakam.akamaized.net
 +.biliintl.com
 +.dreamcast.hk
 
-# ============================================
-# 微信视频号相关规则 (VideoHao)
-# ============================================
 +.channels.weixin.qq.com
 +.live.weixin.qq.com
 +.vweixinf.tc.qq.com
 +.vweixinf.video.qq.com
 
-# ============================================
-# 蛋仔派对 (Egg Party) 相关规则
-# ============================================
+
 +.party.163.com
 +.party-api.163.com
 +.party-cdn.163.com
