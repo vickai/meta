@@ -38,3 +38,6 @@ payload:
   - DOMAIN-SUFFIX,qnap.com
   - DOMAIN-SUFFIX,local
   - DOMAIN-SUFFIX,home.arpa
+
+  # 局域网站点
+  - DOMAIN-SUFFIX,yx.vickai.com
