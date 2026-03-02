@@ -100,8 +100,6 @@ payload:
 # 服务商与工具 (Providers & Tools)
 # VPS、VPN 官网及其他相关工具
 # ============================================
-# Cloudflare 验证/盾
-  - DOMAIN-SUFFIX,challenges.cloudflare.com
 # Vultr VPS 官网 (常用于测试机房连通性)
   - DOMAIN-SUFFIX,vultr.com
 # Surfshark VPN 官网
