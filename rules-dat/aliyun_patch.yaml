@@ -1,0 +1,3 @@
+payload:
+  - DOMAIN-SUFFIX,example-aliyun.com
+  - IP-CIDR,1.2.3.4/24
