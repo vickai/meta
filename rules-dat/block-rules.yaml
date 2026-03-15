@@ -1,0 +1,12 @@
+payload:
+# ============================================
+# 蛋仔派对 (Egg Party) 相关规则
+# ============================================
+# 蛋仔派对主服务
+  - DOMAIN-SUFFIX,party.163.com
+# 游戏 API
+  - DOMAIN-SUFFIX,party-api.163.com
+# 游戏 CDN
+  - DOMAIN-SUFFIX,party-cdn.163.com
+# 游戏资源
+  - DOMAIN-SUFFIX,party-material.163.com
