@@ -29,6 +29,7 @@ payload:
   - DOMAIN-SUFFIX,miwifi.com
   - DOMAIN-SUFFIX,mi.com
   - DOMAIN-SUFFIX,xiaomi.com
+  - DOMAIN-SUFFIX,miot-spec.org
   - DOMAIN-SUFFIX,aqara.com
   - DOMAIN-SUFFIX,tuya.com
   - DOMAIN-SUFFIX,haier.com
