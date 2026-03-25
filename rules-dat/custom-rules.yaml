@@ -1,12 +1,51 @@
 payload:
 # ============================================
-# 蛋仔派对 (Egg Party) 相关规则
+# 网络速度测试 (Speed Test)
+# 用于测试带宽速度
 # ============================================
-# 蛋仔派对主服务
-  - DOMAIN-SUFFIX,party.163.com
-# 游戏 API
-  - DOMAIN-SUFFIX,party-api.163.com
-# 游戏 CDN
-  - DOMAIN-SUFFIX,party-cdn.163.com
-# 游戏资源
-  - DOMAIN-SUFFIX,party-material.163.com
+# Netflix 提供的测速服务
+  - DOMAIN-SUFFIX,fast.com
+# Cloudflare 提供的测速服务
+  - DOMAIN,speed.cloudflare.com
+# 测速网 (中国国内常用)
+  - DOMAIN-SUFFIX,speedtest.cn
+
+# ============================================
+# IP 地址查询 (IP Query)
+# 基础的IP显示工具
+# ============================================
+# IP查询 API (OpenClash 自带检测）
+  - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN-SUFFIX,ip.sb
+# 命令行/网页 IP查询
+  - DOMAIN-SUFFIX,ifconfig.me
+# IP查询站，分流测试
+  - DOMAIN-SUFFIX,ip125.com
+# 简洁的 IP 和 延迟测试
+  - DOMAIN-SUFFIX,ping0.cc
+# 检查 VPN、代理或匿名网络是否真正隐藏了真实信息
+  - DOMAIN-SUFFIX,ipleak.in
+
+# ============================================
+# 隐私与指纹检测 (Privacy & Fingerprint)
+# 检测 DNS 泄露、WebRTC 泄露、浏览器指纹伪装度
+# ============================================
+# 深度匿名度检测 (检查黑名单/DNS/时区)
+  - DOMAIN-SUFFIX,whoer.com
+# 全面的浏览器指纹泄露检测
+  - DOMAIN-SUFFIX,browserleaks.com
+# 检测 IP 是否为代理/VPN
+  - DOMAIN-SUFFIX,ip2proxy.com
+# VPN 和 代理检测 API
+  - DOMAIN-SUFFIX,vpnapi.io
+# 网络地址工具集
+  - DOMAIN-SUFFIX,addr.tools
+# IPv6 连通性测试
+  - DOMAIN-SUFFIX,test-ipv6.com
+
+
+
+
+
+
+
