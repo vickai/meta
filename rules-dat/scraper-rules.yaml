@@ -1,0 +1,66 @@
+payload:
+# ============================================
+# 媒体库刮削 (Media Scraper) 相关规则
+# 适用范围: Emby, Plex, MoviePilot, OpenList 等
+# 建议策略: 走代理 (大流量节点 / 自动优选)
+# ============================================
+
+# --- TMDB (The Movie Database) ---
+# TMDB 主站及 API
+  - DOMAIN-SUFFIX,themoviedb.org
+# TMDB 图片与 CDN
+  - DOMAIN-SUFFIX,tmdb.org
+# 匹配可能遗漏的 TMDB 泛域名
+  - DOMAIN-KEYWORD,tmdb
+
+# --- TVDB (TheTVDB) ---
+# TVDB 主站及 API
+  - DOMAIN-SUFFIX,thetvdb.com
+# TVDB 图片等静态资源
+  - DOMAIN-SUFFIX,tvdb.com
+
+# --- IMDB (Internet Movie Database) ---
+# IMDB 主站
+  - DOMAIN-SUFFIX,imdb.com
+# IMDB 媒体资源 CDN
+  - DOMAIN-SUFFIX,media-imdb.com
+
+# --- Fanart (高清海报/艺术字库) ---
+# Emby/Plex 高清刮削必不可少的图片源
+  - DOMAIN-SUFFIX,fanart.tv
+
+# --- Trakt (观影记录与同步后端) ---
+  - DOMAIN-SUFFIX,trakt.tv
+
+# --- 其他常见欧美刮削/数据源 ---
+  - DOMAIN-SUFFIX,tvmaze.com
+  - DOMAIN-SUFFIX,omdbapi.com
+
+# ============================================
+# 扩展刮削后端 (MetaTube 等专属源)
+# ============================================
+
+# MetaTube 官方依赖
+  - DOMAIN-SUFFIX,metatube.org
+# 常见元数据获取站点 (用于特定影片刮削)
+  - DOMAIN-SUFFIX,javbus.com
+  - DOMAIN-SUFFIX,javlibrary.com
+  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,r18.com
+  - DOMAIN-SUFFIX,mgstage.com
+  - DOMAIN-SUFFIX,fc2.com
+  - DOMAIN-SUFFIX,caribbeancom.com
+  - DOMAIN-SUFFIX,1pondo.tv
+# 兜底匹配相关特定后缀
+  - DOMAIN-KEYWORD,jav
+
+# ============================================
+# 字幕刮削服务 (Subtitles Scraper)
+# ============================================
+
+# Opensubtitles (全球最大字幕库，常被墙)
+  - DOMAIN-SUFFIX,opensubtitles.org
+# SubHD (国内较稳，通常可直连，若遇阻可走代理)
+  - DOMAIN-SUFFIX,subhd.tv
+# 字幕库
+  - DOMAIN-SUFFIX,zimuku.org
