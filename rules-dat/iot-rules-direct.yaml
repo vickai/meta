@@ -1,55 +1,57 @@
 payload:
   # ============================================
-  # 基础服务与特殊端口
+  # 基础服务与 IoT 专用端口
   # ============================================
-  # NTP服务
+  # NTP服务 (设备时间同步)
   - DST-PORT,123
-  # SSDP / UPnP
+  # SSDP / UPnP (局域网设备发现)
   - DST-PORT,1900
-  # mDNS
+  # mDNS (局域网域名解析，如 .local)
   - DST-PORT,5353
-  # ONVIF
+  # ONVIF (通用安防摄像头协议)
   - DST-PORT,3702
-  # 海康威视
+  # 海康威视专用端口
   - DST-PORT,8000
-  # RTSP
+  # RTSP (视频流传输协议)
   - DST-PORT,554
-  # 小米 IoT
+  # 小米 IoT 本地控制端口
   - DST-PORT,7681
-  # CoAP
+  # CoAP (受限应用协议)
   - DST-PORT,5683
 
   # ============================================
-  # IoT / 局域网广播 / 组播 / 链路本地直连
+  # 工业控制与光伏 / 储能专用端口
   # ============================================
-  - IP-CIDR,224.0.0.0/4,no-resolve
-  - IP-CIDR,239.0.0.0/8,no-resolve
-  - IP-CIDR,255.255.255.255/32,no-resolve
+  # Modbus TCP (逆变器/BMS/电表局域网通信)
+  - DST-PORT,502
+  # MQTT (IoT 设备标准通信流)
+  - DST-PORT,1883
+  # MQTT over SSL (加密的 IoT 通信)
+  - DST-PORT,8883
 
   # ============================================
-  # 局域网与组网 IP 段，保留 no-resolve 防 DNS 泄漏
+  # IoT / 智能家居硬件商常见域名直连
   # ============================================
-  - IP-CIDR,10.0.0.0/8,no-resolve
-  - IP-CIDR,100.64.0.0/10,no-resolve
-  - IP-CIDR,100.100.100.100/32,no-resolve
-  - IP-CIDR,127.0.0.0/8,no-resolve
-  - IP-CIDR,169.254.0.0/16,no-resolve
-  - IP-CIDR,172.16.0.0/12,no-resolve
-  - IP-CIDR,192.168.0.0/16,no-resolve
+  # 四色光伏 (太阳能与储能采集器)
+  - DOMAIN-SUFFIX,siseli.com
 
-  # ============================================
-  # IoT / 智能家居常见域名直连
-  # ============================================
+  # 小米 / 米家生态
   - DOMAIN-SUFFIX,miwifi.com
   - DOMAIN-SUFFIX,mi.com
   - DOMAIN-SUFFIX,xiaomi.com
   - DOMAIN-SUFFIX,miot-spec.org
+  # 绿米 Aqara
   - DOMAIN-SUFFIX,aqara.com
+  # 涂鸦智能
   - DOMAIN-SUFFIX,tuya.com
+  # 海尔智家
   - DOMAIN-SUFFIX,haier.com
+  # 华为全屋智能 / 海思
   - DOMAIN-SUFFIX,huawei.com
   - DOMAIN-SUFFIX,hisilicon.com
+  # NAS 服务
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,qnap.com
+  # 局域网通用顶级域名
   - DOMAIN-SUFFIX,local
   - DOMAIN-SUFFIX,home.arpa
